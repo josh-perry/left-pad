@@ -11,7 +11,8 @@ var cache = [
   '      ',
   '       ',
   '        ',
-  '         '
+  '         ',
+  '          '
 ];
 
 function leftPad (str, len, ch) {
@@ -26,7 +27,7 @@ function leftPad (str, len, ch) {
   // convert `ch` to a `string` cuz it could be a number
   ch = ch + '';
   // cache common use cases
-  if (ch === ' ' && len < 10) return cache[len] + str;
+  if (ch === ' ' && len < 11) return cache[len] + str;
   // `pad` starts with an empty string
   var pad = '';
   // loop
